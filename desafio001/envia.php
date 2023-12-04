@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <style>
         a {
-            box-shadow: 20px;
-            background-color: blue;
+            display: block;
+            font-size: 1em;
+            width: 100%;
+            height: 40px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
         }
+        
     </style>
 </head>
 <body>
@@ -22,12 +31,12 @@
         <?php 
           $n = $_GET["n"];
           echo "<p>O número escolhido foi <strong>$n </strong> </p>";
-          $n = ($n - 1);
-          print("O antesseco é $n");
-          $n = ($n + 1);
-          print("<p>O proximo é $n</p>");
+          $ant = ($n - 1);
+          $suc = $n + 1;
+          echo "O seu antecessor é $ant";
+          echo"<p>O seu sucessor é $suc</p>";
         ?>
-        <p><a href="javascript:history.go(-1)">Voltar </a></p>
+        <p><a href="javascript:history.go(-1)"> ⬅️Voltar </a></p>
     </main>
 </body>
 </html> 
