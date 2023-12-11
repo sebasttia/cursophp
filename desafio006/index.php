@@ -15,11 +15,10 @@
         <h1>Anatomia de uma Divisão</h1>
         <form action="" method="get">
             <label for="d1">Dividendo</label>
-            <input type="number" name="d1" id="d1" min="0"<?=$dividendo?>">
+            <input type="number" name="d1" id="d1" min="0" value="<?=$dividendo?>">
             <label for="d2">Divisor</label>
             <input type="number" name="d2" id="d2" min="1" value="<?=$divisor?>">
             <input type="submit" value="Analisar">
-            <input type="reset" value="Limpar">
         </form>
     </main>
 
